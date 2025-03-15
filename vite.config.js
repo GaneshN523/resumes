@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // Update the base property to match your repo name.
 export default defineConfig({
-  base: '/resumes/',
+  base: '/resumeviewer/',
   plugins: [react()],
 })
