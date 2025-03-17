@@ -29,7 +29,6 @@ const Resumes = () => {
     } else {
       alert("Sharing is not supported in your browser. Please copy this link: " + resume.file);
     }
-
   };
 
   return (
@@ -52,8 +51,10 @@ const Resumes = () => {
       ))}
       {selectedResume && (
         <Modal onClose={() => setSelectedResume(null)}>
-          <div className={styles.viewerContainer}>
-            <ResumeViewer pdf={selectedResume.file} />
+          <div className={styles.modalWrapper}>
+            <div className={styles.viewerContainer}>
+              <ResumeViewer pdf={selectedResume.file} />
+            </div>
           </div>
         </Modal>
       )}

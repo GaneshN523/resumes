@@ -28,9 +28,11 @@ const Skills = () => {
       ))}
       {selectedSkill && (
         <Modal onClose={() => setSelectedSkill(null)}>
-          <div className={styles.modalContent}>
-            <h2>{selectedSkill.name}</h2>
-            <p>{selectedSkill.details}</p>
+          <div className={styles.modalWrapper}>
+            <div className={styles.modalContent}>
+              <h2>{selectedSkill.name}</h2>
+              <p>{selectedSkill.details}</p>
+            </div>
           </div>
         </Modal>
       )}
