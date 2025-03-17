@@ -83,6 +83,11 @@
   }
   
   @media (max-width: 600px) {
+    .viewerContainer {
+      width: 90vw;
+      height: 80vh;
+    }
+    
     .listItem {
       flex-direction: column;
       align-items: flex-start;
@@ -92,7 +97,9 @@
       justify-content: space-between;
       margin-top: 10px;
     }
-    .viewButton, .shareButton, .downloadButton {
+    .viewButton,
+    .shareButton,
+    .downloadButton {
       flex: 1;
       padding: 8px 12px;
       font-size: 0.9rem;
