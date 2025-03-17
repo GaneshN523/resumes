@@ -81,11 +81,12 @@
     max-width: 90vw;
     max-height: 90vh;
   }
-  
+
   @media (max-width: 600px) {
     .viewerContainer {
       width: 90vw;
       height: 80vh;
+      color: black;
     }
     
     .listItem {
